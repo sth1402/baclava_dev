@@ -1,0 +1,50 @@
+Package: baclava
+Type: Package
+Title: Bayesian Analysis of Cancer Latency with Auxiliary Variable
+        Augmentation
+Version: 2.1
+Date: 2026-05-01
+Authors@R: c(person("Shannon T.", "Holloway",email = "shannon.t.holloway@gmail.com", role = c("aut", "cre")),
+             person("Raphael N.", "Morsomme",email = "raphael.morsomme@duke.edu", role = c("aut")), 
+             person("Jason", "Xu",email = "jason.q.xu@duke.edu", role = c("ctb")),
+             person("Marc D.", "Ryser", email = "marc.ryser@duke.edu", role = c("ctb")))
+Description: A novel data-augmentation Markov chain Monte Carlo sampling algorithm to fit a progressive compartmental model of disease in a Bayesian framework 
+             Morsomme, R.N., Holloway, S.T., Ryser, M.D. and Xu J. (2024) <doi:10.48550/arXiv.2408.14625>.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Imports: Rcpp, RcppNumerical, RcppParallel, ggplot2, coda, dplyr,
+        stats, tibble, tidyr, foreach, doParallel
+LinkingTo: Rcpp, RcppEigen, RcppNumerical, RcppParallel
+SystemRequirements: GNU make
+Encoding: UTF-8
+NeedsCompilation: yes
+LazyData: true
+Suggests: rmarkdown, knitr
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Author: Raphael N. Morsomme [aut], Shannon T. Holloway [aut, cre], Jason Xu [ctb], Marc D. Ryser [ctb]
+RoxygenNote: 7.3.3
+Collate: 
+    'Class_Adapt.R'
+    'Class_Prior.R'
+    'Class_Param.R'
+    'Class_Model.R'
+    'Class_Distribution.R'
+    'Class_Compartment.R'
+    'Class_Strategy.R'
+    'RcppExports.R'
+    'extractLatent.R'
+    'addLatent.R'
+    'aloocv.R'
+    'utilities.R'
+    'cohortODX.R'
+    'combineBaclava.R'
+    'computeEndpoints.R'
+    'fit_baclava.R'
+    'predictODX_helpers.R'
+    'predictODX.R'
+    'predictODX_helpers_old.R'
+    'predictODX_old.R'
+    's3_methods.R'
+    'screen_data.R'
+    'thinBaclava.R'
+Packaged: 2025-12-01 21:53:46 UTC; sth45
